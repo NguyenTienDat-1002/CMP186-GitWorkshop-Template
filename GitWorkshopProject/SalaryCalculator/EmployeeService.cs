@@ -14,6 +14,7 @@ namespace SalaryCalculator
             }
 
             decimal factor = 0;
+
             switch (employeeType){
                 case EmployeeType.Engineer:
                     factor = 1;
@@ -26,6 +27,7 @@ namespace SalaryCalculator
                 case EmployeeType.Expert:
                     factor = 3;
                     break;
+
             // TODO: if employee is Expert, set factor = 3
 
             var salary = BASIC_SALARY * years * factor;
